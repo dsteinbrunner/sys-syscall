@@ -21,6 +21,11 @@ WriteMakefile(
         'POSIX' => 0,
         'Test::More' => 0,
     },
+    META_MERGE              => {
+        resources => {
+            repository => 'https://github.com/bradfitz/sys-syscall',
+        },
+    },
     dist                    => {
 #        CI                      => "cvs commit",
 #        RCS_LABEL               => 'cvs tag RELEASE_$(VERSION_SYM)',
